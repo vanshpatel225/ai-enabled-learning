@@ -32,7 +32,7 @@ export function ChatMessage({ message }: Props) {
           <p>{message.content}</p>
         ) : (
           <div className="prose prose-sm dark:prose-invert max-w-none">
-            <ReactMarkdown remarkPlugins={[remarkGfm]}>
+            <ReactMarkdown>
               {message.content}
             </ReactMarkdown>
           </div>
